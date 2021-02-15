@@ -5,11 +5,21 @@ function main() {
 
 
 function loadQuotes() {
-    return JSON.parse(quotes_str)
+    return JSON.parse(quotes_str);
 }
 
 
 function displayQuote(quotes) {
-    document.getElementById("quote").innerHTML = quotes[67].quote;
-    document.getElementById("author").innerHTML = quotes[67].author;
+    let i = getQuoteIndex();
+    document.getElementById("quote").innerHTML = quotes[i].quote;
+    document.getElementById("author").innerHTML = quotes[i].author;
+}
+
+
+function getQuoteIndex() {
+    let startDate = new Date('02/15/2021');
+    let today = new Date();
+    let msDiff =  Math.abs(today.getTime() - startDate.getTime());
+    let msInDay = 1000 * 3600 * 24;
+    return Math.floor(msDiff / msInDay);
 }
