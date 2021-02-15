@@ -1,6 +1,7 @@
 function main() {
     let quotes = loadQuotes();
-    displayQuote(quotes);
+    sessionStorage.setItem('quoteIndex', getQuoteIndex());
+    displayQuote(quotes)
 }
 
 
@@ -10,7 +11,7 @@ function loadQuotes() {
 
 
 function displayQuote(quotes) {
-    let i = getQuoteIndex();
+    let i = sessionStorage.getItem('quoteIndex');
     document.getElementById("quote").innerHTML = quotes[i].quote;
     document.getElementById("author").innerHTML = quotes[i].author;
 }
