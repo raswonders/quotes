@@ -1,0 +1,42 @@
+ body {
+     background-color: #87ceeb;
+ }
+
+ .box {
+     margin: auto;
+     border: 30px solid #FFEA6F;
+     width: 500px;
+ }
+
+ .button {
+     border: 0;
+     background-color: #FF803E;
+ }
+
+ .button_container {
+     font-size: 0;
+     padding: 0;
+     margin: auto;
+     display: block;
+     width: 130px;
+ }
+
+ .quote_container {
+     width: 250px;
+     margin: 20px auto 20px auto;
+ }
+
+ .author_container {
+     text-align: right;
+ }
+
+ .left_button {
+     margin-right: 1px
+ }
+
+ #quote {
+ }
+
+ #author {
+     display: block;
+ }

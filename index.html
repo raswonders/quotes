@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 
+TAKEAWAYS:
+JS: 
+-
+objects good for keeping organized data, written in JSON
+JQUERY JS library, making some JS tasks more easier to perform
+
+CSS:
+-
+horizontal alignment of block with auto margin
+inline elements can be aligned with text-align from their parent
+DESIGN: 
+-
+Is better if button contrasts to overall design or elements near it.
+TODOs:
+display random text in the window together with Author
+-->
+
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="quotes.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <meta charset="utf-8">
+        <title>Quotes</title>
+        <meta name="description" content="">
+        <meta name="author" content="raswonders">
+        <link rel="stylesheet" media="screen" href="main.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="button_container">
+                <button class="button left_button">&lt Prev</button>
+                <button class="button">Next &gt</button></div>
+            <div class="quote_container">
+                <p id="quote"></p>
+                <div class="author_container">
+                    <span id="author"></span>
+                </div>
+            </div>
+        </div>
+	    <script>
+            window.onload = main;
+	    </script>
+    </body>
+</html>
