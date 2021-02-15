@@ -25,9 +25,11 @@ function getQuoteIndex() {
     return Math.floor(msDiff / msInDay);
 }
 
+
 function next() {
     console.log('Next()')
 }
+
 
 function prev() {
     console.log('Prev()')
