@@ -24,3 +24,11 @@ function getQuoteIndex() {
     let msInDay = 1000 * 3600 * 24;
     return Math.floor(msDiff / msInDay);
 }
+
+function next() {
+    console.log('Next()')
+}
+
+function prev() {
+    console.log('Prev()')
+}
