@@ -33,18 +33,14 @@ function indexOutOfBound(index) {
 }
 
 
-function next() {
-    let i = sessionStorage.getItem('quoteIndex');
-    if (indexOutOfBound(++i)) {
+function changeQuote(offset) {
+    let i = parseInt(sessionStorage.getItem('quoteIndex'));
+    i += offset;
+    if (indexOutOfBound(i)) {
         return;
     }
     sessionStorage.setItem('quoteIndex', i);
     displayQuote();
-}
-
-
-function prev() {
-    console.log('Prev()')
 }
 
 
