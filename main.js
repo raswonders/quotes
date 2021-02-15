@@ -1,7 +1,9 @@
+const quotes = loadQuotes();
+
+
 function main() {
-    let quotes = loadQuotes();
     sessionStorage.setItem('quoteIndex', getQuoteIndex());
-    displayQuote(quotes)
+    displayQuote()
 }
 
 
@@ -10,7 +12,7 @@ function loadQuotes() {
 }
 
 
-function displayQuote(quotes) {
+function displayQuote() {
     let i = sessionStorage.getItem('quoteIndex');
     document.getElementById("quote").innerHTML = quotes[i].quote;
     document.getElementById("author").innerHTML = quotes[i].author;
@@ -26,11 +28,23 @@ function getQuoteIndex() {
 }
 
 
+function indexOutOfBound(index) {
+    return index < 0 || index >= quotes.length;
+}
+
+
 function next() {
-    console.log('Next()')
+    let i = sessionStorage.getItem('quoteIndex');
+    if (indexOutOfBound(++i)) {
+        return;
+    }
+    sessionStorage.setItem('quoteIndex', i);
+    displayQuote();
 }
 
 
 function prev() {
     console.log('Prev()')
 }
+
+
