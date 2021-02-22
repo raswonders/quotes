@@ -9,7 +9,17 @@
 
  .button {
      border: 0;
-     background-color: #FF803E;
+     background-color: white;
+     border: 1px black;
+ }
+
+ .button:hover {
+     color: white;
+     background-color: black;
+ }
+
+ .button:active {
+     color: gray;
  }
 
  .button_container {
@@ -17,7 +27,6 @@
      padding: 0;
      width: max-content;
      margin: 0 auto;
-     left: 50%;
  }
 
  .bubble_container {
