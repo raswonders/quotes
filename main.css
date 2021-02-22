@@ -1,10 +1,10 @@
  body {
-     background-color: #87ceeb;
+     background-color: white;
  }
 
  .box {
      margin: auto;
-     width: 500px;
+     width: 100%;
  }
 
  .button {
@@ -15,14 +15,15 @@
  .button_container {
      font-size: 0;
      padding: 0;
-     margin: auto;
-     display: block;
-     width: 130px;
+     width: max-content;
+     margin: 0 auto;
+     left: 50%;
  }
 
  .bubble_container {
+     color: white;
      width: 250px;
-     margin: 0 auto 0 auto;
+     margin: 0 auto;
  }
 
  .bubble_container > img {
@@ -30,7 +31,7 @@
  }
 
  .quote_container {
-     background-image: url('mid.png');
+     background-image: url('mid.svg');
      background-repeat: repeat-y;
  }
 
