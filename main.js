@@ -15,7 +15,7 @@ function loadQuotes() {
 function displayQuote() {
     let i = sessionStorage.getItem('quoteIndex');
     document.getElementById("quote").innerHTML = quotes[i].quote;
-    document.getElementById("author").innerHTML = quotes[i].author;
+    document.getElementById("author").innerHTML = "-".concat(quotes[i].author);
 }
 
 

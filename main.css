@@ -8,7 +8,8 @@
  }
 
  .button {
-     border: 0;
+     font-size: 1.5em;
+     font-weight: bold;
      background-color: white;
      border: 1px black;
  }
@@ -16,6 +17,7 @@
  .button:hover {
      color: white;
      background-color: black;
+     cursor: pointer;
  }
 
  .button:active {
@@ -23,15 +25,16 @@
  }
 
  .button_container {
-     font-size: 0;
+     /*font-size: 0;*/
      padding: 0;
      width: max-content;
      margin: 0 auto;
  }
 
  .bubble_container {
+     font-family: "Times New Roman", serif;
      color: white;
-     width: 250px;
+     width: 25em;
      margin: 0 auto;
  }
 
@@ -40,6 +43,7 @@
  }
 
  .quote_container {
+     font-size: 1.5em;
      background-image: url('mid.svg');
      background-repeat: repeat-y;
  }
@@ -58,5 +62,5 @@
 
  #author {
      display: block;
-     padding-right: 5px;
+     padding-right: 10px;
  }
